@@ -1,0 +1,47 @@
+/* PALETA DE CORES
+
+#00B8A9
+#00857a
+#F8F3D4
+#FFDE7D
+#F6416C
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Edu+SA+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@800&family=Fredericka+the+Great&display=swap');
+
+body {
+  background-color: #212529;
+  font-family: 'Cinzel', serif;
+}
+
+/* CONTAINER DA ESQUERDA INTEIRO */
+#lateral {
+  position: absolute;
+  width: 30vh;
+  height: 100vh;
+}
+
+/* TEXTO DA LATERAL ESQUERDA */
+#textoalin {
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+}
+#textoapresentacao {
+  color: #f8f9fa;
+  font-size: 3vh;
+  text-align: center;
+  padding: 2vh;
+}
+b {
+  color: #FFDE7D;
+}
+.verde {
+  color: #00B8A9;
+}
+#seta {
+  position: absolute;
+  height: 17vh;
+  padding-top: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
