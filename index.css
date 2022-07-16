@@ -13,10 +13,15 @@ body {
   font-family: 'Cinzel', serif;
 }
 
+#divisao {
+  display: grid;
+  grid-template: 100vh / 30vw 70vw;
+}
+
 /* CONTAINER DA ESQUERDA INTEIRO */
 #lateral {
-  position: absolute;
-  width: 30vh;
+  position: relative;
+  width: 100%;
   height: 100vh;
 }
 
@@ -24,6 +29,7 @@ body {
 #textoalin {
 position: absolute;
 left: 50%;
+top: 5%;
 transform: translateX(-50%);
 }
 #textoapresentacao {
@@ -44,4 +50,51 @@ b {
   padding-top: 3vh;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* CHAT */
+#chat {
+  display: grid;
+  grid-template: 10vh 1fr / 1fr 1fr;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #00B8A9;
+}
+#barra {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  background-color: #F6416C;
+  z-index: 0;
+}
+#sombra {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+
+}
+.foto {
+  width: 8vh;
+  height: 8vh;
+}
+#branco {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1vh;
+}
+#samuel {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin-left: 1vh;
 }
