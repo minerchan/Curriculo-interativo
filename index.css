@@ -44,16 +44,11 @@ b {
 .verde {
   color: #00B8A9;
 }
-#seta {
-  position: absolute;
-  height: 17vh;
-  padding-top: 3vh;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 /* CHAT */
-#chat {
+.chat {
+  grid-row: 1/2;
+  grid-column: 2/3;
   display: grid;
   grid-template: 10vh 1fr / 1fr 1fr;
   position: relative;
@@ -73,7 +68,7 @@ b {
 #sombra {
   grid-row: 1/3;
   grid-column: 2/3;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.1);
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -105,24 +100,41 @@ b {
   text-transform: uppercase;
 }
 #nomeDaPessoa {
-font-size: 3vh;
-grid-row: 1/2;
-grid-column: 1/2;
-z-index: 0;
 position: absolute;
-top: 50%;
-left: 30%;
-transform: translateY(-50%);
+font-size: 3vh;
+z-index: 0;
+top: 3%;
+left: 25%;
+transform: translate(-50%, -25%);
 }
 #samuelcavalcanti {
   font-size: 3vh;
-  grid-row: 1/2;
-  grid-column: 2/2;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translateY(-50%);
+  top: 3%;
+  left: 75%;
+  transform: translate(-40%, -25%);
+}
+
+#online1{
+  font-size: 2vh;
+  position: absolute;
+  top: 6%;
+  left: 25%;
+  transform: translateX(-50%);
+
+}
+#online2{
+  font-size: 2vh;
+  position: absolute;
+  top: 6%;
+  left: 75%;
+  transform: translateX(-40%);
+  z-index: 2;
+}
+
+.online {
+color: #FFDE7D;
 }
 
 .gridtexto{
@@ -186,3 +198,37 @@ transform: translateY(-50%);
   grid-row: 6/7;
   grid-column: 2/3;
   }
+#variavel {
+  font-weight: 600;
+  color: #000000;
+}
+#gridchat {
+  margin-top: 2vh;
+  display: grid;
+  grid-template: 5vh / 12vw 3vw;
+}
+#caixa {
+  font-size: 4vh;
+  padding: .5vh;
+  height: 100%;
+  width: 100%;
+}
+#botao{
+  background-color: #00B8A9;
+  border-color: #00B8A9;
+  width: 3vw;
+  height: 5vh;
+  z-index: 0;
+  border-radius: 0px 10px 10px 0px;
+}
+.seta {
+  width: 2vw;
+  height: 4vh;
+}
+.seta:active {
+  padding-left: 2px;
+  padding-top: 2px;
+}
+.escondido{
+  display: none;
+}

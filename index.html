@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  <link rel="shortcut icon" href="#">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Currículo Interativo</title>
- <link href="reset.css" rel="stylesheet" />
- <link href="index.css" rel="stylesheet" />  <!-- este deve ser o 1° -->
+ <link href="reset.css" rel="stylesheet" /> <!-- este deve ser o 1° -->
+ <link href="index.css" rel="stylesheet" />  
 </head>
 <body>
 <container>
@@ -15,26 +17,35 @@
     <section id="lateral">
       <div id="textoalin">
         <p id="textoapresentacao"><b>Bem vindo(a)</b> ao meu <b class="verde">currículo interativo</b>. Aqui é onde uso meu conhecimento em <b>Front-end</b> para tornar a <b class="verde">experiência de leitura</b> mais agradável para <b>você</b>!</p>
-        <p id="textoapresentacao"> E aí, você <b class="verde">ta pronto</b>? Se <b>sim</b>, é só <b class="verde">clicar aqui dentro</b></p>
-        <img id="seta" src="imagens/Seta.png" alt="seta amarela apontando para direita">
+        <p id="textoapresentacao"> E aí, você <b class="verde">ta pronto</b>? Se <b>sim</b>, é só <b class="verde">colocar seu nome aqui</b> e <b>apertar o botão</b></p>
+        <div id="gridchat">
+        <input id="caixa" type="text">
+        <button id="botao"><svg xmlns="http://www.w3.org/2000/svg" class="seta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg></button>
+        </div>
       </div>
     </section>
-
-    <section id="chat">
+    
+    <section class="chat escondido">
       <div id="sombra"></div>
       <div id="barra">
         <img class="foto" id="branco" src="imagens/profile1.png" alt="foto em branco">
       </div>
       <img class="foto" id="samuel" src="imagens/profile2.png" alt="foto do samuel">
-      <h1 class="titulo" id="nomeDaPessoa">nomedapessoa</h1>
-      <h1 class="titulo"id="samuelcavalcanti">samuel cavalcanti</h1>
+      <h1 class="titulo" id="nomeDaPessoa">nomedapessoa
+          <h3 class= "online" id="online1">online</h3>
+      </h1>
+      
+      <h1 class="titulo"id="samuelcavalcanti">
+        samuel cavalcanti<h3 class= "online" id="online2">online</h3></h1>
 
       <!-- CHAT -->
       <div class="gridtexto">
         <div class="chat1" id="balao1">Oi Samuel, poderia me dizer que tipo de vaga você está procurando?
         </div>
 
-        <div class="chat2" id="balao2">Oi NomeDaPessoa, estou procurando vaga na área de Front-end, onde eu possa fazer algo útil para outras pessoas</div>
+        <div class="chat2" id="balao2">Oi <b id="variavel">NomeDaPessoa</b>, estou procurando vaga na área de Front-end, onde eu possa fazer algo útil para outras pessoas</div>
 
         <div class="chat1" id="balao3">O que você estuda ou já sabe na área de programação?
         </div>
@@ -46,6 +57,7 @@
 
         <div class="chat2" id="balao6">Já tenho um bom domínio em HTML, CSS, Javascript, Photoshop e Git. Estou estudando agora SASS, React e Node.js</div>
       </div>
+    
       
 
       
