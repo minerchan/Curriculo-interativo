@@ -98,3 +98,72 @@ b {
   z-index: 2;
   margin-left: 1vh;
 }
+.titulo {
+  color: #F8F3D4;
+}
+.titulo::first-letter{
+  text-transform: uppercase;
+}
+#nomeDaPessoa {
+font-size: 3vh;
+grid-row: 1/2;
+grid-column: 1/2;
+z-index: 0;
+position: absolute;
+top: 50%;
+left: 30%;
+transform: translateY(-50%);
+}
+#samuelcavalcanti {
+  font-size: 3vh;
+  grid-row: 1/2;
+  grid-column: 2/2;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+}
+
+.gridtexto{
+  display: grid;
+  grid-template: repeat(4, 1fr)/ 1fr 1fr;
+  width: 200%;
+  height: 100%;
+  background-color: #00b812;
+
+}
+
+#balao1 {
+}
+.chat1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  height: fit-content;
+  width: 40%;
+  margin-left: 5%;
+  background-color: #FFDE7D;
+  border-radius: .5vh;
+  padding: 1vh;
+  text-align: justify;
+}
+#balao2 {
+  
+  }
+.chat2 {
+  justify-self: end;
+  font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.7rem;
+  height: fit-content;
+  width: 40%;
+  margin-right: 5%;
+  background-color: #F8F3D4;
+  border-radius: .5vh;
+  padding: 1vh;
+  text-align:right;
+  z-index: 2;
+}
