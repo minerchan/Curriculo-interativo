@@ -46,7 +46,7 @@ b {
 }
 
 /* CHAT */
-.chat {
+.conversa {
   grid-row: 1/2;
   grid-column: 2/3;
   display: grid;
@@ -147,41 +147,37 @@ color: #FFDE7D;
 
 }
 
+
+.chat {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
+  height: fit-content;
+  width: 80%;
+  border-radius: .5vh;
+  padding: 1vh;
+}
+.um {
+  justify-self: start;
+  margin-left: 5%;
+  background-color: #FFDE7D;
+  text-align: justify;
+}
+
+.dois {
+  justify-self: end;
+  margin-right: 5%;
+  background-color: #F8F3D4;
+  text-align:right;
+  z-index: 2;
+}
 #balao1 {
   grid-row: 1/2;
   grid-column: 1/2;
-}
-.chat1 {
-  justify-self: start;
-  font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-  height: fit-content;
-  width: 80%;
-  margin-left: 5%;
-  background-color: #FFDE7D;
-  border-radius: .5vh;
-  padding: 1vh;
-  text-align: justify;
 }
 #balao2 {
   grid-row: 2/3;
   grid-column: 2/3;
   }
-.chat2 {
-  justify-self: end;
-  font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.6rem;
-  height: fit-content;
-  width: 80%;
-  margin-right: 5%;
-  background-color: #F8F3D4;
-  border-radius: .5vh;
-  padding: 1vh;
-  text-align:right;
-  z-index: 2;
-}
 #balao3 {
   grid-row: 3/4;
   grid-column: 1/2;
