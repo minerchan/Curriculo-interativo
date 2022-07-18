@@ -1,7 +1,8 @@
-// fazer botao responder ao enter do teclado
-// O nome do chat tem que ser com letra maiúscula no começo também
-// ONLINE TEM QUE VIRAR 3 PONTOS SEMPRE QUE FOR EXECUTAR O PRÓXIMO CHAT DA PESSOA 
-// fazer os baloes de chat vir um a um
+// FAZER O BOTAO DE POR O NOME RESPONDER AO TECLADO
+// CONSERTAR O nome do chat tem que ser com letra maiúscula no começo também
+// DIGITANDO - CRIAR FUNCTION ONLINE TEM QUE VIRAR DIGITANDO... E USAR SEMPRE QUE FOR EXECUTAR O PRÓXIMO CHAT DA PESSOA 
+// CONVERSA - INSERIR TEMPO UNIFORME DE ESPERA ENTRE CHATS NUMA FUNÇÃO. USAR ELA SEMPRE ANTES DA EXIBIÇÃO DE UMA CAIXA DE MENSAGEM 
+
 
 
 
