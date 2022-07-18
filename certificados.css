@@ -1,0 +1,17 @@
+body {
+  background-color: #212529;
+}
+.organizacao {
+  display: grid;
+  grid-template: repeat(2,100vh) repeat(2, 100vh) / 1fr;
+}
+.certificado {
+  place-self: center;
+  width: 80vw;
+  height: 90vh;
+}
+
+#cert1,
+#cert2 {
+  height: 100vh;
+}
