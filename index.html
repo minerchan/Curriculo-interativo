@@ -12,35 +12,29 @@
 </head>
 <body>
 <container>
-  <div id="divisao">
-  <!-- LATERAL ESQUERDA DO SITE -->
-    <section id="lateral">
-      <div id="textoalin">
-        <p id="textoapresentacao"><b>Bem vindo(a)</b> ao meu <b class="verde">currículo interativo</b>. Aqui é onde uso meu conhecimento em <b>Front-end</b> para tornar a <b class="verde">experiência de leitura</b> mais agradável para <b>você</b>!</p>
-        <p id="textoapresentacao"> E aí, você <b class="verde">ta pronto</b>? Se <b>sim</b>, é só <b class="verde">colocar seu nome aqui</b> e <b>apertar o botão</b></p>
-        <div id="gridchat">
-        <input id="caixa" type="text">
-        <button id="botao"><svg xmlns="http://www.w3.org/2000/svg" class="seta" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-        </svg></button>
-        </div>
+  <!-- 1 PARTE DO SITE -->
+
+    <section id="textoalin">
+      <p id="textoapresentacao">Bem vindo(a) ao meu <b>currículo interativo</b>. Aqui é onde uso meu conhecimento em Front-end para tornar a sua experiência de leitura mais <b>agradável</b>! </p><p id="textoapresentacao">Tudo pronto? Então é só<b> preencher com o seu nome</b> e clicar em <b>ok</b>
+      </p>
+      <input id="caixa" type="text" placeholder="insira o seu nome aqui"><button id="botao">ok</button>
+     
       </div>
     </section>
     
-    <!-- VOLTAR ESCONDIDO DA CONVERSA -->
-    <section class="conversa">
+    <section class="conversa escondido">
       <div id="sombra"></div>
       <div id="barra">
         <img class="foto" id="branco" src="imagens/profile1.png" alt="foto em branco">
       </div>
       <img class="foto" id="samuel" src="imagens/profile2.png" alt="foto do samuel">
-      <h1 class="titulo" id="nomeDaPessoa">nomedapessoa
-          <h3 class= "online" id="online1">online</h3>
-      </h1>
+      <h1 class="titulo" id="nomeDaPessoa">nomedapessoa</h1>
+      <h3 class= "online" id="online1">online</h3>
       
       <h1 class="titulo"id="samuelcavalcanti">
-        samuel cavalcanti<h3 class= "online" id="online2">online</h3></h1>
-
+        samuel Cavalcanti</h1>
+        <h3 class= "online" id="online2">online</h3>
+        
       <!-- CHAT -->
       <div class="gridtexto">
         <div class="chat um" id="balao1">Oi Samuel, poderia me dizer que tipo de vaga você está procurando?
@@ -58,12 +52,13 @@
 
         <div class="chat dois" id="balao6">Fiz faculdade de Artes e Design na UFJF por quatro anos, mas saí antes de completar. Tenho inglês intermediário, N5 em japonês e cursos específicos pela Alura e Udemy que podem ser acessados <a href=#>aqui</a> </div>
       </div>
-    
-      
-
-      
-
+      <div id="alinbutton">
+        <div class="olho">&#x1F441</div>
+        <button class="mais fonte">A+</button>
+        <button class="menos fonte">A-</button>
+      </div>
     </section>
+    
   </div>
 </container>
 <script src="index.js"></script>

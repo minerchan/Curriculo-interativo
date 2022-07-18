@@ -1,45 +1,70 @@
-/* PALETA DE CORES
+/* NOVA PALETA DE CORES
 
-#00B8A9
-#00857a
-#F8F3D4
-#FFDE7D
-#F6416C
+#2C3639
+#3F4E4F
+#A27B5C
+#DCD7C9
+
  */
- @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Edu+SA+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@800&family=Fredericka+the+Great&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 body {
   background-color: #212529;
-  font-family: 'Cinzel', serif;
-}
-
-#divisao {
-  display: grid;
-  grid-template: 100vh / 30vw 70vw;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* CONTAINER DA ESQUERDA INTEIRO */
-#lateral {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+#caixa {
+  margin-top: 5%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vh;
+  padding: .5vh;
+  width: 70%;
+  background-color: #DCD7C9;
+  border-color: #3F4E4F;
+  border-width: 4px;
+  border-style: inset;
 }
 
+#botao {
+  margin-top: 5%;
+  position: absolute;
+  left: 75%;
+  font-size: 4vh;
+  padding: .5vh;
+  width: 10%;
+  font-weight: bold;
+  color: #DCD7C9;
+  background-color: #A27B5C;
+  border-color: #3F4E4F;
+  border-width: 4px;
+  border-style: inset;
+  border-left: none;
+  box-shadow: -2px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+#botao:active {
+  border-top-width: 5px;
+  border-bottom-width: 0px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
 /* TEXTO DA LATERAL ESQUERDA */
 #textoalin {
+width: 54%;
 position: absolute;
 left: 50%;
-top: 5%;
+top: 10%;
 transform: translateX(-50%);
 }
 #textoapresentacao {
-  color: #f8f9fa;
-  font-size: 3vh;
-  text-align: center;
+  color: #DCD7C9;
+  font-size: 5vh;
+  text-align: justify;
   padding: 2vh;
 }
 b {
-  color: #FFDE7D;
+  color:#A27B5C;
 }
 .verde {
   color: #00B8A9;
@@ -47,14 +72,12 @@ b {
 
 /* CHAT */
 .conversa {
-  grid-row: 1/2;
-  grid-column: 2/3;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template: 10vh 1fr / 1fr 1fr;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #00B8A9;
+  background-color: #DCD7C9;
 }
 #barra {
   grid-row: 1/2;
@@ -62,7 +85,7 @@ b {
   position: relative;
   width: 100%;
   height: 10vh;
-  background-color: #F6416C;
+  background-color:#A27B5C;
   z-index: 0;
 }
 #sombra {
@@ -101,34 +124,34 @@ b {
 }
 #nomeDaPessoa {
 position: absolute;
-font-size: 3vh;
+font-size: 4vh;
 z-index: 0;
-top: 3%;
+top: 1%;
 left: 25%;
 transform: translate(-50%, -25%);
 }
 #samuelcavalcanti {
-  font-size: 3vh;
+  font-size: 4vh;
   z-index: 2;
   position: absolute;
-  top: 3%;
+  top: 1%;
   left: 75%;
   transform: translate(-40%, -25%);
 }
 
 #online1{
-  font-size: 2vh;
+  font-size: 3vh;
   position: absolute;
-  top: 6%;
+  top: 5%;
   left: 25%;
   transform: translateX(-50%);
 
 }
 #online2{
-  font-size: 2vh;
+  font-size: 3vh;
   position: absolute;
-  top: 6%;
-  left: 75%;
+  top: 5%;
+  left: 75.5%;
   transform: translateX(-40%);
   z-index: 2;
 }
@@ -137,18 +160,56 @@ transform: translate(-50%, -25%);
 color: #FFDE7D;
 }
 
+#alinbutton {
+  background-color: #DCD7C9;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template: 7vh 9vh 9vh/ 4vw;
+  row-gap: 1vh;
+  height: 30vh
+  
+}
+.olho {
+  color: #2C3639;
+  font-size: 6vh;
+  width: 80%;
+  align-self: center;
+  justify-self: center;
+}
+.fonte {
+  font-size: 3.5vh;
+  width: 80%;
+  height: 100%;
+  background-color: #DCD7C9;
+  color: #2C3639;
+  border: inset .3vh #2C3639;
+  font-weight: bold;
+  border-radius: .5vh;
+  justify-self: center;
+}
+.fonte:active{
+  border-width: .35vh;
+  padding-bottom: 0.2vh;
+  background-color: #FFDE7D;
+}
 .gridtexto{
-  margin-top: 5%;
+  margin-top: 10%;
   display: grid;
   grid-template: repeat(6, max-content)/ 1fr 1fr;
   width: 200%;
-  height: 95%;
   row-gap: 3vh;
 
 }
 
 
 .chat {
+  font-size: 2.2vh;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
   height: fit-content;
@@ -159,17 +220,30 @@ color: #FFDE7D;
 .um {
   justify-self: start;
   margin-left: 5%;
-  background-color: #FFDE7D;
+  background-color:#4D6661;
+  color: #F8F3D4;
   text-align: justify;
 }
 
 .dois {
   justify-self: end;
   margin-right: 5%;
-  background-color: #F8F3D4;
+  background-color: #455C50;
+  color: #F8F3D4;
   text-align:right;
   z-index: 2;
 }
+a,
+a:hover,
+a :visited,
+a:active{
+ color: #FFDE7D; 
+}
+#variavel {
+  font-weight: 600;
+  color: #F8F3D4;
+}
+
 #balao1 {
   grid-row: 1/2;
   grid-column: 1/2;
@@ -194,37 +268,8 @@ color: #FFDE7D;
   grid-row: 6/7;
   grid-column: 2/3;
   }
-#variavel {
-  font-weight: 600;
-  color: #000000;
-}
-#gridchat {
-  margin-top: 2vh;
-  display: grid;
-  grid-template: 5vh / 12vw 3vw;
-}
-#caixa {
-  font-size: 4vh;
-  padding: .5vh;
-  height: 100%;
-  width: 100%;
-}
-#botao{
-  background-color: #00B8A9;
-  border-color: #00B8A9;
-  width: 3vw;
-  height: 5vh;
-  z-index: 0;
-  border-radius: 0px 10px 10px 0px;
-}
-.seta {
-  width: 2vw;
-  height: 4vh;
-}
-.seta:active {
-  padding-left: 2px;
-  padding-top: 2px;
-}
+
+
 .escondido{
   display: none;
 }
