@@ -15,7 +15,9 @@
 <a id="facilmanutencao">
 <h2>&#x1F527;	Fácil manutenção e acessibilidade</h2>
 <p>Código mais limpo possível, apelando para uma boa semântica e com preocupação em acessibilidade, preenchendo os "alt's" das imagens com descrições diretas, usando tags corretas e inserindo botões de aumento de fonte. Além disso os balões se ajustam de acordo com a quantidade de texto e sempre seguirão adiante do último podendo ter margin aumentada ou diminuida como o row-gap da grid, para aumentar ou diminuir o número de balões, basta mudar as configurações da grid</p></a>
-<img height="300em" src="trocar">
+<img height="30em" src="https://user-images.githubusercontent.com/104655361/180116996-8fadd3ef-4264-4a5f-9c2a-d8a28f1c4fd6.jpg">
+
+
 
 
 <a id="interacao">
@@ -30,11 +32,10 @@
 <img height="300em" src="trocar">
 
 
-
 <a id="digitando">
 <h2>&#x2328;	Digitando...</h2>
 <p>É chato esperar sem saber se vem mais mensagem né? Por isso o "online" aqui é trocado por "digitando..." enquanto ainda tiver mensagem chegando, acredito ser ótimo para criar expectativa, assim como em muitas redes sociais por aí</p> </a>
-<img height="300em" src="trocar">
+<img height="300em" src="https://user-images.githubusercontent.com/104655361/180117959-bbdff454-3597-443b-bba0-1882cc93112a.png">
 
 
 <a id="conversa">
