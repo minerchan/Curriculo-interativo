@@ -18,11 +18,3 @@ html {
   height: 100vh;
   margin: 0 auto;
 }
-
-
-/* Propriedades para celulares menores que 400px de largura...*/
-@media screen and (max-width: 400px){
-  body {
-  
-  }
-}

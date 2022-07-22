@@ -307,13 +307,14 @@ a:active{
   position: relative;
   bottom: 50%;
   left: 185%;
-  top: -25%;
+  bottom: 100%;
   transform: translateY(-100%);
   width: 10vh;
   height: 10vh;
   z-index: 3;
   filter: invert(50%) sepia(65%) saturate(265%) hue-rotate(344deg) brightness(89%) contrast(81%);
   animation: ladinho 1s ease-in infinite;
+
 }
 
 .seta:hover {

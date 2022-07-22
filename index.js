@@ -18,6 +18,7 @@ const balao12 = document.querySelector('#balao12');
 const seta = document.querySelector('.seta');
 const barra = document.querySelector('#caixa');
 const botao = document.querySelector("#botao");
+const bip = new Audio('sound/bip.mp3');
 
 let online1 = document.querySelector('#online1');
 let online2 = document.querySelector('#online2');
@@ -78,7 +79,7 @@ botao.addEventListener('click', ()=>{
 // ESSAS FUNÇÕES SÃO PARA O BOTÃO DE ZOOM DO CHAT
 
 ListaMais.addEventListener('click', function(){
-  if(numeroFonteA >= 2.7){
+  if(numeroFonteA >= 2.6){
     ListaMais.style.backgroundColor = "#A27B5C";
   } else{
     ListaMenos.style.backgroundColor = "#DCD7C9";
@@ -96,7 +97,6 @@ ListaMais.addEventListener('click', function(){
     ListaDeChat[9].style.fontSize = `${numeroFonteA}vh`
     ListaDeChat[10].style.fontSize = `${numeroFonteA}vh`
     ListaDeChat[11].style.fontSize = `${numeroFonteA}vh`
-    
   }
 })
 ListaMenos.addEventListener('click', function(){
@@ -129,7 +129,7 @@ function balaoum(){
   setTimeout(function(){
   balao1.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 2000);
 online1.textContent = "Digitando..."
 }
@@ -140,7 +140,7 @@ function balaodois(){
   setTimeout(function(){
   balao2.classList.remove("escondido");
   online2.textContent = "online"
-  
+  bip.play();
 }, 6000);
 setTimeout(function(){
 online2.textContent = "Digitando..."}, 4000)
@@ -152,7 +152,7 @@ function balaotres(){
   setTimeout(function(){
   balao3.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 14000);
 setTimeout(function(){
 online1.textContent = "Digitando..."}, 10000)
@@ -164,7 +164,7 @@ function balaoquatro(){
   setTimeout(function(){
   balao4.classList.remove("escondido");
   online2.textContent = "online"
-  
+  bip.play();
 }, 22000);
 setTimeout(function(){
 online2.textContent = "Digitando..."}, 16000)
@@ -175,7 +175,7 @@ function balaocinco(){
   setTimeout(function(){
   balao5.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 30000);
 setTimeout(function(){
 online1.textContent = "Digitando..."}, 22000)
@@ -186,7 +186,7 @@ function balaoseis(){
   setTimeout(function(){
   balao6.classList.remove("escondido");
   online2.textContent = "online"
-  
+  bip.play();
   
 }, 38000);
 setTimeout(function(){
@@ -204,7 +204,7 @@ function balaosete(){
   setTimeout(function(){
   balao7.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 2000);
 online1.textContent = "Digitando..."
 }
@@ -212,7 +212,7 @@ function balaooito(){
   setTimeout(function(){
   balao8.classList.remove("escondido");
   online2.textContent = "online"
-  
+  bip.play();
 }, 6000);
 setTimeout(function(){
 online2.textContent = "Digitando..."}, 4000)
@@ -222,7 +222,7 @@ function balaonove(){
   setTimeout(function(){
   balao9.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 14000);
 setTimeout(function(){
 online1.textContent = "Digitando..."}, 10000)
@@ -233,7 +233,7 @@ function balaodez(){
   setTimeout(function(){
   balao10.classList.remove("escondido");
   online2.textContent = "online"
-  
+  bip.play();
 }, 22000);
 setTimeout(function(){
 online2.textContent = "Digitando..."}, 16000)
@@ -243,7 +243,7 @@ function balaoonze(){
   setTimeout(function(){
   balao11.classList.remove("escondido");
   online1.textContent = "online"
-  
+  bip.play();
 }, 30000);
 setTimeout(function(){
 online1.textContent = "Digitando..."}, 22000)
@@ -253,7 +253,7 @@ function balaodoze(){
   setTimeout(function(){
   balao12.classList.remove("escondido");
   online2.textContent = "online"
-
+  bip.play();
 }, 38000);
 setTimeout(function(){
 online2.textContent = "Digitando..."}, 31000);}
