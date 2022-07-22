@@ -1,7 +1,5 @@
 <div align="justify">
 <h1>&#x1F4C4 Currículo Interativo	</h1>
-<b>&#x2705 Projeto concluído</b>
-<br></br>
 <p>Uma maneira mais divertida de apresentar um currículo</p>
 <h2>Funções interessantes:</h2>
 <h4><ul>
