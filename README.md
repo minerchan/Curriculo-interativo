@@ -1,7 +1,9 @@
 <div align="justify">
-<h1>&#x1F4C4 Currículo Interativo	</h1>
+
+<h1>Currículo Interativo	</h1>
+<h2><b>&#128270; Você pode acessar ele clicando <a href="https://curriculointerativo.netlify.app/">AQUI</a><b></h2>
 <p>Uma maneira mais divertida de apresentar um currículo</p>
-<h2>Funções interessantes:</h2>
+<h2>&#128161; Funções interessantes:</h2>
 <h4><ul>
 <li><a href="#conversa">Conversa</a></li>
 <li><a href="#facilmanutencao">Fácil manutenção e acessibilidade</a></li>
